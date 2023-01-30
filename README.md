@@ -1,1 +1,0 @@
-# frijofrancis.github.io
