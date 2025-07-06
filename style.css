@@ -1,91 +1,92 @@
-/* Global Styles */
-* {
-  box-sizing: border-box;
+body {
+  font-family: 'Segoe UI', sans-serif;
   margin: 0;
   padding: 0;
-}
-
-body {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-    "Lucida Sans", Arial, sans-serif, sans-serif;
-  line-height: 1.6;
+  background: #f4f4f4;
   color: #333;
-  background-color: #f9f9f9;
 }
 
 header {
-  background-color: #333;
+  background: #333;
   color: #fff;
-  padding: 1em;
+  padding: 2em;
   text-align: center;
 }
 
-header h1 {
-  font-size: 2em;
-  margin-bottom: 0.5em;
+nav {
+  margin-top: 1em;
 }
 
-header ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-header li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-header a {
-  color: #fff;
+nav a {
+  color: #fdfdfd;
+  margin: 0 1em;
   text-decoration: none;
+  font-weight: bold;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 2em;
+nav a:hover {
+  text-decoration: underline;
 }
 
 section {
-  background-color: #fff;
-  padding: 1em;
-  margin-bottom: 20px;
-  box-sizing: content-box;
-  width: 100%;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 2em;
+  max-width: 800px;
+  margin: auto;
 }
 
 h2 {
-  font-size: 1.5em;
-  margin-bottom: 0.5em;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5em;
 }
 
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.job {
+  background: #fff;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px #ccc;
 }
 
-li {
-  margin-bottom: 10px;
+.skill-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1em;
+  list-style-type: none;
+  padding-left: 0;
+}
+
+#projects {
+  padding: 2em;
+  background: #f0f9ff;
+}
+
+.project-card {
+  background: #fff;
+  border-left: 5px solid #0077cc;
+  padding: 1em;
+  margin: 1em 0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+  margin-top: 0;
+  color: #0077cc;
+}
+
+.project-card details {
+  margin-top: 0.5em;
+}
+
+.project-card summary {
+  cursor: pointer;
+  font-weight: bold;
+  color: #555;
 }
 
 footer {
-  background-color: #333;
-  color: #fff;
-  padding: 1em;
   text-align: center;
-  clear: both;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  main {
-    flex-direction: column;
-  }
-  section {
-    margin-bottom: 10px;
-  }
+  padding: 1em;
+  background: #222;
+  color: #aaa;
 }
